@@ -23,7 +23,7 @@ $('input').on('keyup', function (evt){
        
         var html = $("<a>" + value.Text + "</a>");
         $(".results").append(html);
-        	$("a").attr("href", encodeURI("http://www.bing.com/search + value.Text"));
+        	$("a").attr("href", encodeURI("http://www.bing.com/search?q=" + value.Text));
 //turn to html and append DOM
       });  
     });
